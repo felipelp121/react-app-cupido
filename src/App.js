@@ -11,7 +11,7 @@ import {
 } from "./pages/index";
 
 function App() {
-  return <Match />;
+  return <EnviarMensagem />;
 }
 
 export default App;
