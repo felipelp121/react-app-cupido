@@ -1,13 +1,8 @@
+import { HeaderComponent2 } from "../Components/HeaderComponent2";
 export function Login() {
   return (
     <div className="bg-red-200 h-screen">
-      <div className="bg-[#DE310B] px-4 h-16 text-white">
-        <div className="flex justify-between items-center h-full">
-          <button>Cupido Online</button>
-          <button>Login</button>
-        </div>
-      </div>
-
+      <HeaderComponent2 />
       <div className="flex flex-col justify-center px-10">
         <div className="h-8"></div>
         <h1 className="text-2xl text-center">Login</h1>
@@ -36,7 +31,6 @@ export function Login() {
           <a href="/src/cadastro.html"> Cadastre-se</a>
         </p>
       </div>
-
       <div className="fixed bottom-0 bg-[#DE310B] h-16 w-full"></div>
     </div>
   );

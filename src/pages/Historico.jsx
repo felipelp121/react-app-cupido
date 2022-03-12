@@ -1,27 +1,19 @@
+import { HeaderComponent } from "../Components/HeaderComponent";
+
 export function Historico() {
   return (
     <div className="bg-red-200 h-screen">
-      <div className="bg-[#DE310B] px-4 h-16 text-white">
-        <div className="flex justify-between items-center h-full">
-          <button>Cupido Online</button>
-          <div className="flex gap-3 text-sm items-center">
-            <button>Mensagem</button>
-            <button>Histórico</button>
-            <button>Logout</button>
-          </div>
-        </div>
-      </div>
-
+      <HeaderComponent />
       <div className="h-8"></div>
       <h1 className="text-xl text-center">Histórico</h1>
       <div className="h-6"></div>
-
       <div className="flex justify-center gap-6">
         <h1 className="border-b-2 border-b-red-500 pb-2">Recebidas</h1>
-        <h1 className="border-b border-b-gray-500 pb-2 text-gray-600">Enviadas</h1>
+        <h1 className="border-b border-b-gray-500 pb-2 text-gray-600">
+          Enviadas
+        </h1>
       </div>
       <div className="h-6"></div>
-
       <div className="flex justify-center gap-2 px-8">
         <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
           <p className="w-10 text-center">1</p>
@@ -35,7 +27,6 @@ export function Historico() {
           </p>
         </div>
       </div>
-
       <div className="fixed bottom-0 bg-[#DE310B] h-16 w-full"></div>
     </div>
   );
