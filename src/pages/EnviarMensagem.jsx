@@ -2,7 +2,7 @@ export function EnviarMensagem() {
 
 
   async function sendEmail(name, email, text) {
-    const response = await fetch('https://8khgmgythj.execute-api.us-east-1.amazonaws.com/dev/send', {
+    const response = await fetch('https://daa83dobnc.execute-api.us-east-1.amazonaws.com/dev', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -10,9 +10,7 @@ export function EnviarMensagem() {
       },
       body: JSON.stringify({ subject: name, email: email, text: text })
     });
-    const json = await response.json();
-    console.log("JSON: ", json);
-    console.log("RESPONSE: ", response);
+    console.log(response.json())
   }
 
   function sendForm(event) {
