@@ -2,7 +2,7 @@ export function EnviarMensagem() {
 
 
   async function sendEmail(name, email, text) {
-    const response = await fetch('https://jxd51ggb23.execute-api.us-east-1.amazonaws.com/send', {
+    const response = await fetch('https://8khgmgythj.execute-api.us-east-1.amazonaws.com/dev/send', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
