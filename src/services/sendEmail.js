@@ -1,6 +1,6 @@
 export async function sendEmail(email, subject, text) {
   const response = await fetch(
-    "https://daa83dobnc.execute-api.us-east-1.amazonaws.com/dev",
+    "https://613hrltlv6.execute-api.us-east-1.amazonaws.com/dev/send",
     {
       method: "POST",
       headers: {
