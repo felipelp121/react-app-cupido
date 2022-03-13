@@ -15,7 +15,7 @@ export function Home() {
         <div className="h-8"></div>
         <h1 className="text-2xl">Cadastre-se agora mesmo</h1>
         <div className="h-6"></div>
-        <Link to="/logup">
+        <Link to="/cadastrar">
           <button className="bg-[#DE310B] py-1 px-6 rounded-lg text-white">
             Cadastrar
           </button>

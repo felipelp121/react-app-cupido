@@ -1,4 +1,3 @@
-export * from "./Cadastro";
 export * from "./Home";
 export * from "./Historico";
 export * from "./Match";
