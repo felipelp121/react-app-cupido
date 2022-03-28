@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Auth } from "aws-amplify";
 import { HeaderComponent2 } from "../Components/HeaderComponent2";
+import { Navigate } from "react-router-dom";
 
 class SignUpForm extends Component {
   state = {
@@ -78,8 +79,7 @@ class SignUpForm extends Component {
 
   render() {
     if (this.state.confirmed) {
-      window.location.href =
-        "https://master.d3ss6e61sdhrsp.amplifyapp.com/mensagem";
+      return <Navigate to="/mensagem" />;
     }
 
     if (this.state.signedUp) {
