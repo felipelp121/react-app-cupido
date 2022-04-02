@@ -7,7 +7,7 @@ export function Home() {
       <div className="bg-cover bg-[url('https://ichi.pro/assets/images/max/724/0*08iHaB3cwOzLdglY')]">
         <div className="flex items-center h-60 px-4">
           <h1 className="text-white text-2xl leading-7 w-56">
-            Envie mensagens anônimas para aquela pessoa especial
+            Envie mensagens para aquela pessoa especial
           </h1>
         </div>
       </div>
