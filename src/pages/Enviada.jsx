@@ -38,10 +38,6 @@ export function Enviada(props) {
             <div className="h-2"></div>
             <h1 className="text-2xl">Mensagem enviada:</h1>
             <div className="h-4"></div>
-            <h3>Para:</h3>
-            <span>{props.data.emailTo2}</span>
-            <div className="h-4"></div>
-            <h3>Texto:</h3>
             <p className="text-sm leading-6">{props.data.message}</p>
             <div className="h-20"></div>
           </div>
