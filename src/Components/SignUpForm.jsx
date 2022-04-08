@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Auth } from "aws-amplify";
 import { HeaderComponent2 } from "../Components/HeaderComponent2";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 class SignUpForm extends Component {
   state = {
@@ -178,7 +178,7 @@ class SignUpForm extends Component {
           </div>
           <div className="h-4"></div>
           <p className="text-center text-base">
-            Já possue cadastro? <a href="/src/login.html"> Faça Login</a>
+            Já possue cadastro? <Link to="/login"> Faça Login</Link>
           </p>
         </div>
         <div className="fixed bottom-0 bg-[#DE310B] h-16 w-full"></div>

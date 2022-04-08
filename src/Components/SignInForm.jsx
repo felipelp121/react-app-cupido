@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Auth } from "aws-amplify";
 import Cache from "aws-amplify";
 import { HeaderComponent2 } from "../Components/HeaderComponent2";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 class CognitoReactSignInForm extends Component {
   state = {
@@ -177,7 +177,8 @@ class CognitoReactSignInForm extends Component {
           </div>
           <div className="h-4"></div>
           <p className="text-center text-base">
-            Já possue cadastro? <a href="/src/login.html"> Faça Login</a>
+            Ainda não possue cadastro?{" "}
+            <Link to="/cadastrar"> Cadastre-se </Link>
           </p>
         </div>
         <div className="fixed bottom-0 bg-[#DE310B] h-16 w-full"></div>
