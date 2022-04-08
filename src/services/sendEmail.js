@@ -38,14 +38,15 @@ export async function sendEmail(email, subject, text) {
         messageId: responseJson,
       }),
     }
-  ).then((response) => {
-    if (response.ok) {
-      console.log("FETCH OK");
-    }
-    if (!response.ok) {
-      console.log("FETCH FAILED");
-    }
-  });
+  );
+  //   .then((response) => {
+  //   if (response.ok) {
+  //     console.log("FETCH OK");
+  //   }
+  //   if (!response.ok) {
+  //     console.log("FETCH FAILED");
+  //   }
+  // });
 
   // const test = await fetch(
   //   "https://z7x57qrr32.execute-api.us-east-1.amazonaws.com/dev/history/felipelopex1@gmail.com",
